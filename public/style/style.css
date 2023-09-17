@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&family=La+Belle+Aurore&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Apply a background color and font to the entire page */
+body {
+    background-color: #f0f0f0; /* You can change this color to your preference */
+    font-family: Gaegu, sans-serif; /* Use a preferred font here */
+    color: #004225;
+    overflow-x: hidden;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: url(../img/bg.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    padding: 2rem;
+}
+
+.sec-container{
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #fafae7;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+/* Style the form container */
+.frm-container {
+    background-color: #fff; /* Background color for the form */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+form{
+    padding: 1rem .5rem;
+}
+
+/* Style the form rows */
+.row {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+label{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Style the select input */
+select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-family:Gaegu ;
+}
+
+/* Style the text input */
+input[type="text"] {
+    font-size: 1.3rem;
+    font-family:Gaegu ;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Style for the button */
+.btn-con{
+    position: relative;
+}
+button {
+    position: absolute;
+    right: 1.1rem;
+    top: 100%;
+    padding: 10px 20px;
+    background-color: #005e35; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family:Gaegu ;
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #003b22; /* Change the background color on hover */
+}
+/* Style the joke container */
+.joke-container {
+    width: 50%;
+}
+
+/* Style the rows within the joke container */
+.row2 {
+    margin-bottom: 40px;
+}
+
+/* Style the headings and paragraphs */
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #005e35; /* Darken the text color */
+}
+
+p {
+    padding-left: 5rem;
+    font-size: 1.5rem;
+    color: #555; /* Slightly darker text color */
+}
+
+/* Style the image container */
+.img-con {
+    text-align: right;
+}
+
+/* Style the image */
+img {
+    height: 15rem;
+    max-width: 100%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sec-container">
+            <div class="frm-container">
+                <form action="/getJoke" method="get">
+                    <div class="row">
+                        <label for="">Select category</label>
+                        <select name="blacklistFlags" id="">
+                            <option value="qwe">Select</option>
+                            <option value="nsfw">nsfw</option>
+                            <option value="religious">religious</option>
+                            <option value="political">political</option>
+                            <option value="racist">racist</option>
+                            <option value="sexist">sexist</option>
+                            <option value="explicit">explicit</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="">Search using Key Word </label>
+                        <input type="text" name="contains" id="">
+                    </div>
+                    <div class="btn-con">
+                        <button type="submit">GET JOKE</button>
+                    </div>
+                </form>
+            </div>
+            <div class="joke-container">
+                <% if(locals.error){ %>
+                    <h1> <%= error %> </h1>
+                <% }else if(locals.joke.error ){ %>
+                    <h1> <%= joke.message %></h1>
+                <% }else{ %>
+                    <div class="row2">
+                        <h3>category</h3>
+                        <p><%= joke.category %></p>
+                    </div>
+                    <div class="row2">
+                        <h3>setup</h3>
+                        <p><%= joke.setup %></p>
+                    </div>
+                    <div class="row2">
+                        <h3>delivery</h3>
+                        <p><%= joke.delivery %></p>
+                    </div>
+                    <div class="img-con">
+                        <img src="./img/<%= img %>.jpg" alt="">
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
